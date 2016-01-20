@@ -7,6 +7,7 @@ import {stream as wiredep} from 'wiredep';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
